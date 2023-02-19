@@ -1,0 +1,30 @@
+.card {
+    border-radius: 20px;
+    position: relative;
+    padding: 25px 15px;
+    background-color: hsla(0, 0%, 0%, 0.549);
+    margin: 20px;
+    height: 200px;
+    box-shadow: 0 2px 5px #ccc;
+    text-align: left;
+    display: inline-block;
+  }
+img{
+    width: 100px;
+    height: 100px;
+}
+.circle-img {
+    border-radius: 50%;
+    border: 7px solid #4a4343;
+    width: 120px;
+    height: 120px;
+  }
+  .card div{
+   margin-left: 10px;
+
+  }
+  button{
+    margin-left: 10px;
+    border: 1px soild rgb(11, 11, 11);
+    margin-bottom: 5px;
+  }

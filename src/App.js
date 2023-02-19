@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Data from './Data';
+import Card from './Card';
+
+function createCrad(Data){
+  return(<Card 
+     key={Data.id}
+   userId={Data.userId}
+   Title={Data.title}
+  />)
+}
+
 
 function App() {
+  //console.log(Data)
+   //console.log(Data[4])
+   //console.log(Data[4].title)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div className='conatiner'>
+      <input type="text" placeholder='search by id or userId'/><br/>
+       {Data.map(createCrad)}
+ {/* <Card
+           userId={Data[0].userId}
+           title={Data[0].title}
+        />
+        <Card
+           userId={Data[1].userId}
+           title={Data[1].title}
+        />
+        <Card
+           userId={Data[2].userId}
+           title={Data[2].title}
+        /> */}
+
+
+
+      </div>
+  
   );
-}
+
+  }
 
 export default App;
